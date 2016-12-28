@@ -12,18 +12,19 @@ var Home = React.createClass({
 			method:"get",
 			url:"http://datainfo.duapp.com/shopdata/getBanner.php?callback=",
 			dataType:"JSONP",
-			success:function(data){				
-				var result = data;
+			success:function(data){	
+				console.log(data)
+/*				var result = data;
 				var data = eval(result);
 				var len = data.length;
-				console.log("Data",JSON.parse(data[0].goodsBenUrl)[0]);
 				var arr = [];
 				for(var i = 0; i　< len; i++){
 					arr.push(<div className="swiper-slide" key={'banner'+i}><img src={JSON.parse(data[i].goodsBenUrl)[0]}/></div>)
 				}
+				console.log(arr)
 				that.setState({
 					imgsList:arr
-				})
+				})*/
 			}
 		});
 	},	
@@ -36,26 +37,30 @@ var Home = React.createClass({
 					</div>
 					<div className="swiper-pagination"></div>
 				</div>
-				<ul>
-					<li class="acive">
-						<i class="iconfont">&#xe629;</i>
-						<p>首页</p>
+				<ul className="homeKind">
+					<li >
+						<i className="iconfont">&#xe629;</i>
+						<p>运动</p>
 					</li>
 					<li>
-						<i class="iconfont">&#xe60d;</i>
-						<p>分类</p>
+						<i className="iconfont">&#xe60d;</i>
+						<p>服饰</p>
 					</li>
 					<li>
-						<i class="iconfont">&#xe602;</i>
-						<p>购物车</p>
+						<i className="iconfont">&#xe602;</i>
+						<p>鞋包</p>
 					</li>
 					<li>
-						<i class="iconfont">&#xe607;</i>
-						<p>我的</p>
+						<i className="iconfont">&#xe607;</i>
+						<p>美妆</p>
 					</li>
 					<li>
-						<i class="iconfont">&#xe601;</i>
-						<p>更多</p>
+						<i className="iconfont">&#xe601;</i>
+						<p>配饰</p>
+					</li>
+					<li>
+						<i className="iconfont">&#xe601;</i>
+						<p>生活</p>
 					</li>
 				</ul>
 				<ProList mountType="home"/>						

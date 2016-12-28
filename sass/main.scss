@@ -118,7 +118,27 @@ body{
                 .swiper-container{
                     width:100%;
                     height:1.5rem;
+                    .swiper-wrapper{
+                        width:100%;
+                        height:100%;
+                    }
                 }
+              .homeKind{
+                 width: 100%;
+                 height: 1.5rem;
+                 display:flex;
+                 display: -webkit-flex;
+                 &>li{
+                    height: 100%;
+                    flex: 1;
+                    display: flex;
+                    display: -webkit-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                  }
+             }
             }
             .kindContent{
                 

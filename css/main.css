@@ -1,122 +1,33 @@
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none; }
+* { padding: 0; margin: 0; list-style: none; box-sizing: border-box; text-decoration: none; }
 
-html {
-  width: 100%;
-  height: 100%;
-  font-size: 100px; }
+html { width: 100%; height: 100%; font-size: 100px; }
 
-body {
-  width: 100%;
-  height: 100%;
-  font-size: 12px;
-  background-color: #eee; }
+body { width: 100%; height: 100%; font-size: 12px; background-color: #eee; }
 
-#app {
-  width: 100%;
-  height: 100%; }
-  #app .rootBox {
-    width: 100%;
-    height: 100%;
-    display: -webkit-flex;
-    flex-direction: column; }
-    #app .rootBox header {
-      height: 0.44rem;
-      background-color: #f66;
-      text-align: center;
-      color: #fff;
-      font-size: 0.26rem;
-      line-height: 0.44rem; }
-      #app .rootBox header ul {
-        display: flex;
-        height: 100%;
-        color: #fff;
-        font-size: 0.2rem; }
-        #app .rootBox header ul li {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; }
-          #app .rootBox header ul li:nth-child(1), #app .rootBox header ul li:nth-child(3) {
-            width: 0.6rem; }
-          #app .rootBox header ul li:nth-child(1) {
-            text-shadow: 1px 1px 1px #000;
-            font-family: font2; }
-            #app .rootBox header ul li:nth-child(1) .headerBtn {
-              display: block;
-              height: 0.3rem;
-              width: 0.5rem;
-              background: -webkit-linear-gradient(top, #ff8bc0, #e4366b);
-              border-radius: 0.1rem;
-              color: #fff;
-              text-align: center;
-              line-height: 0.3rem;
-              font-size: 0.14rem;
-              border: 1px solid #ccc; }
-          #app .rootBox header ul li:nth-child(3) .headerBtn {
-            display: block;
-            height: 0.6rem;
-            width: 1rem;
-            background: -webkit-linear-gradient(top, #ff8bc0, #e4366b);
-            border-radius: 0.1rem;
-            color: #fff;
-            text-align: center;
-            line-height: 0.6rem;
-            font-size: 0.26rem;
-            border: 1px solid #ccc; }
-          #app .rootBox header ul li:nth-child(3) i.iconfont {
-            font-size: 0.48rem; }
-          #app .rootBox header ul li:nth-child(2) {
-            flex: 1; }
-            #app .rootBox header ul li:nth-child(2) .searchBox {
-              width: 100%;
-              height: 60%;
-              background-color: #fff;
-              display: flex;
-              align-items: center;
-              color: #999;
-              border-radius: 0.1rem; }
-              #app .rootBox header ul li:nth-child(2) .searchBox i {
-                width: 0.4rem;
-                display: block; }
-                #app .rootBox header ul li:nth-child(2) .searchBox i.iconfont {
-                  margin-top: 0.03rem;
-                  margin-left: 0.05rem; }
-              #app .rootBox header ul li:nth-child(2) .searchBox span {
-                display: block;
-                float: left;
-                font-size: 0.24rem; }
-    #app .rootBox section {
-      flex: 1; }
-      #app .rootBox section .homeContent {
-        width: 100%;
-        height: 100%;
-        position: relative; }
-        #app .rootBox section .homeContent .swiper-container {
-          width: 100%;
-          height: 1.5rem; }
-    #app .rootBox footer {
-      width: 100%;
-      height: 0.5rem;
-      background-color: #333; }
-      #app .rootBox footer ul {
-        width: 100%;
-        height: 100%;
-        display: -webkit-flex; }
-        #app .rootBox footer ul li {
-          height: 100%;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: #fff; }
-          #app .rootBox footer ul li.active {
-            color: #f66; }
+#app { width: 100%; height: 100%; }
+#app .rootBox { width: 100%; height: 100%; display: -webkit-flex; flex-direction: column; }
+#app .rootBox header { height: 0.44rem; background-color: #f66; text-align: center; color: #fff; font-size: 0.26rem; line-height: 0.44rem; }
+#app .rootBox header ul { display: flex; height: 100%; color: #fff; font-size: 0.2rem; }
+#app .rootBox header ul li { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#app .rootBox header ul li:nth-child(1), #app .rootBox header ul li:nth-child(3) { width: 0.6rem; }
+#app .rootBox header ul li:nth-child(1) { text-shadow: 1px 1px 1px #000; font-family: font2; }
+#app .rootBox header ul li:nth-child(1) .headerBtn { display: block; height: 0.3rem; width: 0.5rem; background: -webkit-linear-gradient(top, #ff8bc0, #e4366b); border-radius: 0.1rem; color: #fff; text-align: center; line-height: 0.3rem; font-size: 0.14rem; border: 1px solid #ccc; }
+#app .rootBox header ul li:nth-child(3) .headerBtn { display: block; height: 0.6rem; width: 1rem; background: -webkit-linear-gradient(top, #ff8bc0, #e4366b); border-radius: 0.1rem; color: #fff; text-align: center; line-height: 0.6rem; font-size: 0.26rem; border: 1px solid #ccc; }
+#app .rootBox header ul li:nth-child(3) i.iconfont { font-size: 0.48rem; }
+#app .rootBox header ul li:nth-child(2) { flex: 1; }
+#app .rootBox header ul li:nth-child(2) .searchBox { width: 100%; height: 60%; background-color: #fff; display: flex; align-items: center; color: #999; border-radius: 0.1rem; }
+#app .rootBox header ul li:nth-child(2) .searchBox i { width: 0.4rem; display: block; }
+#app .rootBox header ul li:nth-child(2) .searchBox i.iconfont { margin-top: 0.03rem; margin-left: 0.05rem; }
+#app .rootBox header ul li:nth-child(2) .searchBox span { display: block; float: left; font-size: 0.24rem; }
+#app .rootBox section { flex: 1; }
+#app .rootBox section .homeContent { width: 100%; height: 100%; position: relative; }
+#app .rootBox section .homeContent .swiper-container { width: 100%; height: 1.5rem; }
+#app .rootBox section .homeContent .swiper-container .swiper-wrapper { width: 100%; height: 100%; }
+#app .rootBox section .homeContent .homeKind { width: 100%; height: 1.5rem; display: flex; display: -webkit-flex; }
+#app .rootBox section .homeContent .homeKind > li { height: 100%; flex: 1; display: flex; display: -webkit-flex; flex-direction: column; justify-content: center; align-items: center; color: black; }
+#app .rootBox footer { width: 100%; height: 0.5rem; background-color: #333; }
+#app .rootBox footer ul { width: 100%; height: 100%; display: -webkit-flex; }
+#app .rootBox footer ul li { height: 100%; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; }
+#app .rootBox footer ul li.active { color: #f66; }
 
 /*# sourceMappingURL=main.css.map */

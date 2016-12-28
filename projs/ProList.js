@@ -40,15 +40,11 @@ var ProList = React.createClass({
 	},
 	render:function(){
 		return(
-			<div id="wrapperlo">
-				<div id="iscroll">
-					<div id="pullDown">下拉刷新</div>
+	
 					<ul id="proList">
 						{this.state.proList}
 					</ul>
-					<div id="pullUp">上啦加载</div>
-				</div>
-			</div>
+	
 		)
 	},
 	componentDidUpdate:function(){
@@ -61,16 +57,6 @@ var ProList = React.createClass({
 			ReactDOM.render(<DetailHeader type={that.state.mountType}/>,document.getElementById("header"));
 			ReactDOM.unmountComponentAtNode(document.getElementById("content"));
 			ReactDOM.render(<Detail goodsID={goodsID}/>,document.getElementById("content"));
-		})
-		$(".cartBtn").on("click",function(e){
-			e.stopPropagation();
-			console.log($(this).attr("data-goodsID"))
-			var Register = require("./Register");
-			//var RegisterHeader = require("./RegisterHeader");
-			ReactDOM.unmountComponentAtNode(document.getElementById("app"));
-		//  ReactDOM.render(<RegisterHeader type={that.state.mountType}/>,document.getElementById("header"));
-			ReactDOM.unmountComponentAtNode(document.getElementById("app"));
-			ReactDOM.render(<Register />,document.getElementById("app"));
 		})
 	}
 });
